@@ -21,7 +21,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={this.state.logo} className="App-logo" alt="logo" />
-          <FileUpload onUpload={this.newImg} />
+          <form style={{marginTop: "100px"}}>
+            <FileUpload onUpload={this.newImg} />
+          </form>
         </header>
       </div>
     );

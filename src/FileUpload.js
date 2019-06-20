@@ -6,8 +6,6 @@ export class FileUpload extends Component {
     let file = e.target.files[0];
     let reader = new FileReader();
     reader.addEventListener("load", () => {
-      console.log(file.name);
-      console.log(reader.result);
       this.props.onUpload(reader.result);
     }, false);
     if (file) {
@@ -17,7 +15,7 @@ export class FileUpload extends Component {
 
   render() {
     return (
-      <input type="file" onChange={this.upload} style={{marginTop: "100px"}} />
+      <input type="file" onChange={this.upload} />
     )
   }
 }

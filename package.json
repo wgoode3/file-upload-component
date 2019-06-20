@@ -1,5 +1,6 @@
 {
   "name": "file-uploads",
+  "homepage" : "https://wgoode3.github.io/file-upload-component",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
